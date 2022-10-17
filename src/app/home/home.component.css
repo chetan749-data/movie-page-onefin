@@ -1,0 +1,49 @@
+h1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.btn-container{
+    display: flex;
+    text-align: center;
+
+    justify-content: space-between;
+    padding: 10px;
+}
+ .container{
+    height: 100vh;
+    overflow-y: scroll;
+    width: 100vw;
+} 
+.card{
+    width: 400px;
+    height: 400px;
+    border-radius: 2px red dotted;
+    margin: 10px;
+}
+.item{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+img{
+    height: 180px;
+    margin-top: 20px;
+}
+.items{
+    display: flex;
+    flex-wrap: wrap;
+}
+.description{
+  text-overflow: ellipsis;
+  min-width: 150px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.genres{
+    margin-top: 20px;
+}

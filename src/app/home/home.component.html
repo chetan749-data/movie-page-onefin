@@ -1,0 +1,39 @@
+
+
+<div class="container"(scroll)="onScroll($event)">
+
+    <div class="btn-danger btn-container">
+        <div>
+            <p>
+                couldn't find movies?
+            </p>
+        </div>
+        <button (click)="refresh()"> Please refresh </button>
+    </div>
+
+                    <h1>search your movie here</h1>
+                    <input type="text" #movieSearchInput class="form-control" placeholder="Enter movie name">
+    <div class="items"  >
+      <div class="item" *ngFor="let item of content">
+        <div class="card">
+            
+            <div>
+                <img src="{{getImageSource()}}" alt="">
+            </div>
+            <div>
+                <h1>
+                    {{item.title}}
+                </h1>
+                
+            </div>
+            <div class="description">
+                <p>
+                    {{item.description}}
+                </p>
+            </div>
+            <div class="genres">
+                {{item.genres}}
+            </div>
+        </div>
+    </div>
+  </div>
